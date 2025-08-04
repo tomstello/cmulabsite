@@ -3,9 +3,10 @@
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <title>AI Persuasion &amp; Truth Lab - Tom Costello</title>
+<link href="data:image/x-icon;base64," rel="icon" type="image/x-icon"/>
 <link href="https://fonts.googleapis.com" rel="preconnect"/>
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
-<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,200..800;1,200..800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&amp;display=swap" rel="stylesheet"/>
 <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
 <style type="text/tailwindcss">
       :root {
@@ -21,60 +22,53 @@
         background-color: var(--background-color);
         color: var(--text-primary);
       }
+      .card {
+        @apply bg-white rounded-lg shadow-md p-6;
+      }
+      .button_primary {
+        @apply bg-[var(--primary-color)] text-white py-2 px-4 rounded-md hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-[var(--primary-color)] focus:ring-opacity-50;
+      }
+      .button_secondary {
+        @apply bg-[var(--secondary-color)] text-[var(--text-primary)] py-2 px-4 rounded-md hover:bg-gray-200 focus:outline-none focus:ring-2 focus:ring-[var(--accent-color)] focus:ring-opacity-50;
+      }
+      .input {
+        @apply bg-white border border-gray-300 rounded-md py-2 px-3 focus:outline-none focus:ring-2 focus:ring-[var(--accent-color)] focus:border-transparent;
+      }
       .typography_h1 {
-        @apply text-4xl font-bold text-[var(--text-primary)] mb-4;
+        @apply text-3xl font-bold text-[var(--text-primary)] mb-4;
       }
       .typography_h2 {
         @apply text-2xl font-semibold text-[var(--text-primary)] mb-3;
       }
       .typography_body {
-        @apply text-lg text-[var(--text-secondary)] leading-relaxed;
-      }
-      .button_primary {
-        @apply bg-[var(--primary-color)] text-white py-2 px-6 rounded-md hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[var(--primary-color)];
-      }
-      .button_secondary {
-        @apply bg-[var(--secondary-color)] text-[var(--text-primary)] py-2 px-6 rounded-md hover:bg-[var(--accent-color)] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[var(--accent-color)];
-      }
-      .card {
-        @apply bg-white rounded-lg shadow-sm;
-      }
-      .input {
-        @apply bg-white border border-gray-300 rounded-md py-2 px-3 focus:outline-none focus:ring-2 focus:ring-[var(--accent-color)] focus:border-transparent;
+        @apply text-base text-[var(--text-secondary)];
       }
     </style>
 </head>
-<body class="bg-[var(--background-color)]">
-<div class="min-h-screen flex flex-col font-sans">
-<header class="sticky top-0 bg-[var(--background-color)] bg-opacity-80 backdrop-blur-md z-50">
-<div class="container mx-auto px-6 sm:px-10">
-<div class="flex items-center justify-between border-b border-[var(--accent-color)] py-4">
+<body class="bg-background-color text-text-primary">
+<div class="relative flex size-full min-h-screen flex-col overflow-x-hidden group/design-root">
+<div class="layout-container flex h-full grow flex-col">
+<header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-accent-color px-10 py-4">
 <div class="flex items-center gap-3">
-<a class="flex items-center gap-3 text-[var(--text-primary)]" href="#">
-<svg class="h-6 w-6" fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
-<path clip-rule="evenodd" d="M24 4H6V17.3333V30.6667H24V44H42V30.6667V17.3333H24V4Z" fill="currentColor" fill-rule="evenodd"></path>
+<svg class="h-8 w-8 text-primary-color" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+<path clip-rule="evenodd" d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM12 20C7.59 20 4 16.41 4 12C4 7.59 7.59 4 12 4C16.41 4 20 7.59 20 12C20 16.41 16.41 20 12 20ZM13 7H11V11H7V13H11V17H13V13H17V11H13V7Z" fill-rule="evenodd"></path>
 </svg>
-<span class="text-xl font-bold tracking-tight">Tom Costello</span>
-</a>
+<h2 class="text-primary-color text-2xl font-bold tracking-tight">Costello Lab</h2>
 </div>
-<nav class="hidden md:flex items-center gap-8">
-<a class="text-[var(--text-secondary)] hover:text-[var(--text-primary)] text-sm font-medium" href="index.html">Home</a>
-<a class="text-[var(--text-secondary)] hover:text-[var(--text-primary)] text-sm font-medium" href="research.html">Research</a>
-<a class="text-[var(--text-secondary)] hover:text-[var(--text-primary)] text-sm font-medium" href="lab.html">People</a>
-<a class="text-[var(--text-secondary)] hover:text-[var(--text-primary)] text-sm font-medium" href="media & talks.html">Media & Talks</a>
-<a class="text-[var(--text-secondary)] hover:text-[var(--text-primary)] text-sm font-medium" href="tools & data.html">Tools & Data</a>
-<a class="text-[var(--text-primary)] text-sm font-bold" href="about.html">About</a>
-</nav>
-<div class="flex items-center gap-4">
-<button class="md:hidden p-2 rounded-md hover:bg-[var(--secondary-color)]">
+<nav class="flex items-center gap-8 text-base font-medium text-text-secondary">
+<a class="hover:text-primary-color transition-colors" href="index.html">Home</a>
+<a class="hover:text-primary-color transition-colors" href="research.html">Research</a>
+<a class="text-primary-color font-bold transition-colors" href="lab.html">People</a>
+<a class="hover:text-primary-color transition-colors" href="media & talks.html">Media & Talks</a>
+<a class="hover:text-primary-color transition-colors" href="tools & data.html">Tools & Data</a>
+<a class="hover:text-primary-color transition-colors" href="about.html">About</a>
+<a class="hover:text-primary-color transition-colors" href="mailto:tcostello@cmu.edu">Contact</a>
+<button class="button_secondary flex items-center justify-center p-2 rounded-full">
 <svg fill="currentColor" height="20px" viewBox="0 0 256 256" width="20px" xmlns="http://www.w3.org/2000/svg">
-<path d="M224,128a8,8,0,0,1-8,8H40a8,8,0,0,1,0-16H216A8,8,0,0,1,224,128ZM40,72H216a8,8,0,0,0,0-16H40a8,8,0,0,0,0,16ZM216,184H40a8,8,0,0,0,0,16H216a8,8,0,0,0,0-16Z"></path>
+<path d="M229.66,218.34l-50.07-50.06a88.11,88.11,0,1,0-11.31,11.31l50.06,50.07a8,8,0,0,0,11.32-11.32ZM40,112a72,72,0,1,1,72,72A72.08,72.08,0,0,1,40,112Z"></path>
 </svg>
 </button>
-<div class="w-10 h-10 rounded-full bg-cover bg-center" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuA_OXoiWRGEAJTDz_n6nu9xot0xFX0v0o3NyR272612JfSIw7QVZcZlD06ylycC7fQHo3BcIzC5JxjbQmwicYeXpkZ-SZs6OncJhcLAY6x0XuXzpURolNAiaMH0T_0PoAc2DaqdNJQLCIKW-bPl8wMPy7SRJXMcORJgDodwV4bhvpMqy1klHx7nF5Kbo-qunTUG7QgthvvtU-RkN44n0hSyrvLCkB4ncwH-3a0PK6XRhLO44YSo-39FDjHuKlfPEliagQqYdj4yjP8K");'></div>
-</div>
-</div>
-</div>
+</nav>
 </header>
 <main class="flex-grow">
 <section class="py-16 md:py-24">
@@ -136,9 +130,9 @@
 <div class="flex flex-col md:flex-row justify-between items-center">
 <p class="text-sm text-[var(--text-secondary)]">© 2024 Tom Costello. All Rights Reserved.</p>
 <div class="flex gap-4 mt-4 md:mt-0">
-<a class="text-[var(--text-secondary)] hover:text-white" href="#">Twitter</a>
-<a class="text-[var(--text-secondary)] hover:text-white" href="#">LinkedIn</a>
-<a class="text-[var(--text-secondary)] hover:text-white" href="#">Email</a>
+<a class="text-[var(--text-secondary)] hover:text-white" href="https://twitter.com/yourprofile" target="_blank">Twitter</a>
+<a class="text-[var(--text-secondary)] hover:text-white" href="https://linkedin.com/in/yourprofile" target="_blank">LinkedIn</a>
+<a class="text-[var(--text-secondary)] hover:text-white" href="mailto:tcostello@cmu.edu">Email</a>
 </div>
 </div>
 </div>

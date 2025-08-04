@@ -22,11 +22,26 @@
         background-color: var(--background-color);
         color: var(--text-primary);
       }
+      .card {
+        @apply bg-white rounded-lg shadow-md p-6;
+      }
       .button_primary {
         @apply bg-[var(--primary-color)] text-white py-2 px-4 rounded-md hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-[var(--primary-color)] focus:ring-opacity-50;
       }
       .button_secondary {
         @apply bg-[var(--secondary-color)] text-[var(--text-primary)] py-2 px-4 rounded-md hover:bg-gray-200 focus:outline-none focus:ring-2 focus:ring-[var(--accent-color)] focus:ring-opacity-50;
+      }
+      .input {
+        @apply bg-white border border-gray-300 rounded-md py-2 px-3 focus:outline-none focus:ring-2 focus:ring-[var(--accent-color)] focus:border-transparent;
+      }
+      .typography_h1 {
+        @apply text-3xl font-bold text-[var(--text-primary)] mb-4;
+      }
+      .typography_h2 {
+        @apply text-2xl font-semibold text-[var(--text-primary)] mb-3;
+      }
+      .typography_body {
+        @apply text-base text-[var(--text-secondary)];
       }
     </style>
 </head>
@@ -41,12 +56,13 @@
 <h2 class="text-primary-color text-2xl font-bold tracking-tight">Costello Lab</h2>
 </div>
 <nav class="flex items-center gap-8 text-base font-medium text-text-secondary">
+<a class="text-primary-color font-bold transition-colors" href="index.html">Home</a>
 <a class="hover:text-primary-color transition-colors" href="research.html">Research</a>
 <a class="hover:text-primary-color transition-colors" href="lab.html">People</a>
 <a class="hover:text-primary-color transition-colors" href="media & talks.html">Media & Talks</a>
 <a class="hover:text-primary-color transition-colors" href="tools & data.html">Tools & Data</a>
 <a class="hover:text-primary-color transition-colors" href="about.html">About</a>
-<a class="hover:text-primary-color transition-colors" href="#">Contact</a>
+<a class="hover:text-primary-color transition-colors" href="mailto:tcostello@cmu.edu">Contact</a>
 <button class="button_secondary flex items-center justify-center p-2 rounded-full">
 <svg fill="currentColor" height="20px" viewBox="0 0 256 256" width="20px" xmlns="http://www.w3.org/2000/svg">
 <path d="M229.66,218.34l-50.07-50.06a88.11,88.11,0,1,0-11.31,11.31l50.06,50.07a8,8,0,0,0,11.32-11.32ZM40,112a72,72,0,1,1,72,72A72.08,72.08,0,0,1,40,112Z"></path>
@@ -61,7 +77,7 @@
 <h1 class="text-5xl font-extrabold leading-tight tracking-tighter">AI Persuasion &amp; Truth Lab</h1>
 <p class="mt-4 text-lg font-light">Exploring the intersection of artificial intelligence, persuasion, and truth. Led by Dr. Tom Costello at Carnegie Mellon University.</p>
 </div>
-<button class="button_primary mt-8">Learn More</button>
+<a href="about.html" class="button_primary mt-8">Learn More</a>
 </section>
 <section class="mt-16">
 <h2 class="text-3xl font-bold text-text-primary mb-6">Latest News</h2>

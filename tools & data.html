@@ -3,8 +3,10 @@
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <title>Tom Costello - Tools &amp; Data</title>
-<link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect"/>
-<link as="style" href="https://fonts.googleapis.com/css2?display=swap&amp;family=Newsreader%3Awght%40400%3B500%3B700%3B800&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900" onload="this.rel='stylesheet'" rel="stylesheet"/>
+<link href="data:image/x-icon;base64," rel="icon" type="image/x-icon"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&amp;display=swap" rel="stylesheet"/>
 <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
 <style type="text/tailwindcss">
       :root {
@@ -16,21 +18,12 @@
         --accent-color: #e0e0e0;
       }
       body {
-        font-family: "Newsreader", sans-serif;
+        font-family: 'Newsreader', serif;
         background-color: var(--background-color);
         color: var(--text-primary);
       }
-      .typography_h1 {
-        @apply text-3xl font-bold text-[var(--text-primary)] mb-4;
-      }
-      .typography_h2 {
-        @apply text-2xl font-semibold text-[var(--text-primary)] mb-3;
-      }
-      .typography_body {
-        @apply text-base text-[var(--text-secondary)];
-      }
       .card {
-        @apply bg-white rounded-md shadow-md p-6;
+        @apply bg-white rounded-lg shadow-md p-6;
       }
       .button_primary {
         @apply bg-[var(--primary-color)] text-white py-2 px-4 rounded-md hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-[var(--primary-color)] focus:ring-opacity-50;
@@ -41,28 +34,40 @@
       .input {
         @apply bg-white border border-gray-300 rounded-md py-2 px-3 focus:outline-none focus:ring-2 focus:ring-[var(--accent-color)] focus:border-transparent;
       }
+      .typography_h1 {
+        @apply text-3xl font-bold text-[var(--text-primary)] mb-4;
+      }
+      .typography_h2 {
+        @apply text-2xl font-semibold text-[var(--text-primary)] mb-3;
+      }
+      .typography_body {
+        @apply text-base text-[var(--text-secondary)];
+      }
     </style>
 </head>
 <body class="font-newsreader bg-background-color text-text-primary">
-<div class="relative flex size-full min-h-screen flex-col overflow-x-hidden">
-<div class="flex h-full grow flex-col">
-<header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-b-[var(--accent-color)] px-10 py-4 shadow-sm">
-<div class="flex items-center gap-4">
-<div class="size-6 text-[var(--primary-color)]">
-<svg fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
-<path clip-rule="evenodd" d="M24 4H6V17.3333V30.6667H24V44H42V30.6667V17.3333H24V4Z" fill="currentColor" fill-rule="evenodd"></path>
+<div class="relative flex size-full min-h-screen flex-col overflow-x-hidden group/design-root">
+<div class="layout-container flex h-full grow flex-col">
+<header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-accent-color px-10 py-4">
+<div class="flex items-center gap-3">
+<svg class="h-8 w-8 text-primary-color" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+<path clip-rule="evenodd" d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM12 20C7.59 20 4 16.41 4 12C4 7.59 7.59 4 12 4C16.41 4 20 7.59 20 12C20 16.41 16.41 20 12 20ZM13 7H11V11H7V13H11V17H13V13H17V11H13V7Z" fill-rule="evenodd"></path>
 </svg>
+<h2 class="text-primary-color text-2xl font-bold tracking-tight">Costello Lab</h2>
 </div>
-<h1 class="text-2xl font-bold tracking-tight text-[var(--primary-color)]">Tom Costello</h1>
-</div>
-<nav class="flex items-center gap-8">
-<a class="text-[var(--text-secondary)] hover:text-[var(--text-primary)] text-sm font-medium" href="index.html">Home</a>
-<a class="text-[var(--text-secondary)] hover:text-[var(--text-primary)] text-sm font-medium" href="research.html">Research</a>
-<a class="text-[var(--text-secondary)] hover:text-[var(--text-primary)] text-sm font-medium" href="lab.html">People</a>
-<a class="text-[var(--text-secondary)] hover:text-[var(--text-primary)] text-sm font-medium" href="media & talks.html">Media & Talks</a>
-<a class="text-[var(--text-secondary)] hover:text-[var(--text-primary)] text-sm font-medium" href="tools & data.html">Tools & Data</a>
-<a class="text-[var(--text-primary)] text-sm font-bold" href="about.html">About</a>
-<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-10" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuA82Ntvtr0Gys4nLgeVu9KzTeLokUP5p-1yhlBIHd5WKh-Ehw0EomZq7AfX_UZsBCvO6BVC-QL3z5XkcR1REZoS8FbObWoo--B6b_NcnvF9wGmibNp6TNAtQQo-COTdY9N7QuW76w0UiSYykJNAdEa2LvdAjxWf46mhQ59rQPmW8vcOlEf_sQEd1Dy63BbRY_mPr3TqzD5CF2cKcblxIsLI1d95UvU-euykKgaBYe2-LhMwe2CKbURdgM4H1AnZsQwkBhd2mGy_L7oH");'></div>
+<nav class="flex items-center gap-8 text-base font-medium text-text-secondary">
+<a class="hover:text-primary-color transition-colors" href="index.html">Home</a>
+<a class="hover:text-primary-color transition-colors" href="research.html">Research</a>
+<a class="hover:text-primary-color transition-colors" href="lab.html">People</a>
+<a class="hover:text-primary-color transition-colors" href="media & talks.html">Media & Talks</a>
+<a class="text-primary-color font-bold transition-colors" href="tools & data.html">Tools & Data</a>
+<a class="hover:text-primary-color transition-colors" href="about.html">About</a>
+<a class="hover:text-primary-color transition-colors" href="mailto:tcostello@cmu.edu">Contact</a>
+<button class="button_secondary flex items-center justify-center p-2 rounded-full">
+<svg fill="currentColor" height="20px" viewBox="0 0 256 256" width="20px" xmlns="http://www.w3.org/2000/svg">
+<path d="M229.66,218.34l-50.07-50.06a88.11,88.11,0,1,0-11.31,11.31l50.06,50.07a8,8,0,0,0,11.32-11.32ZM40,112a72,72,0,1,1,72,72A72.08,72.08,0,0,1,40,112Z"></path>
+</svg>
+</button>
 </nav>
 </header>
 <main class="container mx-auto px-4 py-12 md:px-6 lg:px-8">
@@ -84,13 +89,13 @@
                   through the process.
                 </p>
 <div class="space-y-4">
-<a class="group flex items-center justify-between p-4 rounded-md border border-[var(--accent-color)] hover:bg-[var(--secondary-color)] transition-colors" href="#">
+<a class="group flex items-center justify-between p-4 rounded-md border border-[var(--accent-color)] hover:bg-[var(--secondary-color)] transition-colors" href="https://github.com/your-username/study-1-pipeline" target="_blank">
 <span class="font-medium text-[var(--text-primary)]">Pipeline for Study 1</span>
 <svg class="text-[var(--text-secondary)] group-hover:text-[var(--text-primary)] transform transition-transform group-hover:translate-x-1" fill="currentColor" height="24px" viewBox="0 0 256 256" width="24px" xmlns="http://www.w3.org/2000/svg">
 <path d="M221.66,133.66l-72,72a8,8,0,0,1-11.32-11.32L196.69,136H40a8,8,0,0,1,0-16H196.69L138.34,61.66a8,8,0,0,1,11.32-11.32l72,72A8,8,0,0,1,221.66,133.66Z"></path>
 </svg>
 </a>
-<a class="group flex items-center justify-between p-4 rounded-md border border-[var(--accent-color)] hover:bg-[var(--secondary-color)] transition-colors" href="#">
+<a class="group flex items-center justify-between p-4 rounded-md border border-[var(--accent-color)] hover:bg-[var(--secondary-color)] transition-colors" href="https://github.com/your-username/study-2-pipeline" target="_blank">
 <span class="font-medium text-[var(--text-primary)]">Pipeline for Study 2</span>
 <svg class="text-[var(--text-secondary)] group-hover:text-[var(--text-primary)] transform transition-transform group-hover:translate-x-1" fill="currentColor" height="24px" viewBox="0 0 256 256" width="24px" xmlns="http://www.w3.org/2000/svg">
 <path d="M221.66,133.66l-72,72a8,8,0,0,1-11.32-11.32L196.69,136H40a8,8,0,0,1,0-16H196.69L138.34,61.66a8,8,0,0,1,11.32-11.32l72,72A8,8,0,0,1,221.66,133.66Z"></path>
@@ -106,13 +111,13 @@
                   code, and adapt it for your own research.
                 </p>
 <div class="space-y-4">
-<a class="group flex items-center justify-between p-4 rounded-md border border-[var(--accent-color)] hover:bg-[var(--secondary-color)] transition-colors" href="#">
+<a class="group flex items-center justify-between p-4 rounded-md border border-[var(--accent-color)] hover:bg-[var(--secondary-color)] transition-colors" href="https://github.com/your-username/project-a" target="_blank">
 <span class="font-medium text-[var(--text-primary)]">Repository for Project A</span>
 <svg class="text-[var(--text-secondary)] group-hover:text-[var(--text-primary)] transform transition-transform group-hover:translate-x-1" fill="currentColor" height="24px" viewBox="0 0 256 256" width="24px" xmlns="http://www.w3.org/2000/svg">
 <path d="M221.66,133.66l-72,72a8,8,0,0,1-11.32-11.32L196.69,136H40a8,8,0,0,1,0-16H196.69L138.34,61.66a8,8,0,0,1,11.32-11.32l72,72A8,8,0,0,1,221.66,133.66Z"></path>
 </svg>
 </a>
-<a class="group flex items-center justify-between p-4 rounded-md border border-[var(--accent-color)] hover:bg-[var(--secondary-color)] transition-colors" href="#">
+<a class="group flex items-center justify-between p-4 rounded-md border border-[var(--accent-color)] hover:bg-[var(--secondary-color)] transition-colors" href="https://github.com/your-username/project-b" target="_blank">
 <span class="font-medium text-[var(--text-primary)]">Repository for Project B</span>
 <svg class="text-[var(--text-secondary)] group-hover:text-[var(--text-primary)] transform transition-transform group-hover:translate-x-1" fill="currentColor" height="24px" viewBox="0 0 256 256" width="24px" xmlns="http://www.w3.org/2000/svg">
 <path d="M221.66,133.66l-72,72a8,8,0,0,1-11.32-11.32L196.69,136H40a8,8,0,0,1,0-16H196.69L138.34,61.66a8,8,0,0,1,11.32-11.32l72,72A8,8,0,0,1,221.66,133.66Z"></path>
@@ -127,13 +132,13 @@
                   experimental tasks. These templates are pre-configured with the necessary logic and randomization, making it easy for you to adapt and use them for your own studies.
                 </p>
 <div class="space-y-4">
-<a class="group flex items-center justify-between p-4 rounded-md border border-[var(--accent-color)] hover:bg-[var(--secondary-color)] transition-colors" href="#">
+<a class="group flex items-center justify-between p-4 rounded-md border border-[var(--accent-color)] hover:bg-[var(--secondary-color)] transition-colors" href="https://www.qualtrics.com/survey-templates/your-template-x" target="_blank">
 <span class="font-medium text-[var(--text-primary)]">Template for Experiment X</span>
 <svg class="text-[var(--text-secondary)] group-hover:text-[var(--text-primary)] transform transition-transform group-hover:translate-x-1" fill="currentColor" height="24px" viewBox="0 0 256 256" width="24px" xmlns="http://www.w3.org/2000/svg">
 <path d="M221.66,133.66l-72,72a8,8,0,0,1-11.32-11.32L196.69,136H40a8,8,0,0,1,0-16H196.69L138.34,61.66a8,8,0,0,1,11.32-11.32l72,72A8,8,0,0,1,221.66,133.66Z"></path>
 </svg>
 </a>
-<a class="group flex items-center justify-between p-4 rounded-md border border-[var(--accent-color)] hover:bg-[var(--secondary-color)] transition-colors" href="#">
+<a class="group flex items-center justify-between p-4 rounded-md border border-[var(--accent-color)] hover:bg-[var(--secondary-color)] transition-colors" href="https://www.qualtrics.com/survey-templates/your-template-y" target="_blank">
 <span class="font-medium text-[var(--text-primary)]">Template for Experiment Y</span>
 <svg class="text-[var(--text-secondary)] group-hover:text-[var(--text-primary)] transform transition-transform group-hover:translate-x-1" fill="currentColor" height="24px" viewBox="0 0 256 256" width="24px" xmlns="http://www.w3.org/2000/svg">
 <path d="M221.66,133.66l-72,72a8,8,0,0,1-11.32-11.32L196.69,136H40a8,8,0,0,1,0-16H196.69L138.34,61.66a8,8,0,0,1,11.32-11.32l72,72A8,8,0,0,1,221.66,133.66Z"></path>

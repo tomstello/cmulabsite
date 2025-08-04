@@ -2,10 +2,11 @@
 <html lang="en"><head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect"/>
-<link as="style" href="https://fonts.googleapis.com/css2?display=swap&amp;family=Newsreader:wght@400;500;700;800&amp;family=Noto+Sans:wght@400;500;700;900" onload="this.rel='stylesheet'" rel="stylesheet"/>
 <title>Stitch Design</title>
 <link href="data:image/x-icon;base64," rel="icon" type="image/x-icon"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&amp;display=swap" rel="stylesheet"/>
 <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
 <style type="text/tailwindcss">
       :root {
@@ -17,12 +18,12 @@
         --accent-color: #e0e0e0;
       }
       body {
-        font-family: 'Newsreader', sans-serif;
+        font-family: 'Newsreader', serif;
         background-color: var(--background-color);
         color: var(--text-primary);
       }
       .card {
-        @apply bg-white rounded-md shadow-md p-6;
+        @apply bg-white rounded-lg shadow-md p-6;
       }
       .button_primary {
         @apply bg-[var(--primary-color)] text-white py-2 px-4 rounded-md hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-[var(--primary-color)] focus:ring-opacity-50;
@@ -46,44 +47,27 @@
 </head>
 <body class="relative flex size-full min-h-screen flex-col bg-[var(--background-color)] group/design-root overflow-x-hidden">
 <div class="layout-container flex h-full grow flex-col">
-<header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-b-[var(--accent-color)] px-10 py-4 shadow-sm">
-<div class="flex items-center gap-4 text-[var(--text-primary)]">
-<div class="size-6 text-[var(--primary-color)]">
-<svg fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
-<path clip-rule="evenodd" d="M12.0799 24L4 19.2479L9.95537 8.75216L18.04 13.4961L18.0446 4H29.9554L29.96 13.4961L38.0446 8.75216L44 19.2479L35.92 24L44 28.7521L38.0446 39.2479L29.96 34.5039L29.9554 44H18.0446L18.04 34.5039L9.95537 39.2479L4 28.7521L12.0799 24Z" fill="currentColor" fill-rule="evenodd"></path>
+<header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-accent-color px-10 py-4">
+<div class="flex items-center gap-3">
+<svg class="h-8 w-8 text-primary-color" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+<path clip-rule="evenodd" d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM12 20C7.59 20 4 16.41 4 12C4 7.59 7.59 4 12 4C16.41 4 20 7.59 20 12C20 16.41 16.41 20 12 20ZM13 7H11V11H7V13H11V17H13V13H17V11H13V7Z" fill-rule="evenodd"></path>
 </svg>
+<h2 class="text-primary-color text-2xl font-bold tracking-tight">Costello Lab</h2>
 </div>
-<h2 class="text-[var(--text-primary)] text-xl font-bold tracking-tight">
-            Dr. Tom Costello
-          </h2>
-</div>
-<div class="flex flex-1 justify-end items-center gap-8">
-<nav class="flex items-center gap-9">
-<a class="text-[var(--text-secondary)] hover:text-[var(--text-primary)] text-sm font-medium" href="index.html">Home</a>
-<a class="text-[var(--text-secondary)] hover:text-[var(--text-primary)] text-sm font-medium" href="research.html">Research</a>
-<a class="text-[var(--text-secondary)] hover:text-[var(--text-primary)] text-sm font-medium" href="lab.html">People</a>
-<a class="text-[var(--text-secondary)] hover:text-[var(--text-primary)] text-sm font-medium" href="media & talks.html">Media & Talks</a>
-<a class="text-[var(--text-secondary)] hover:text-[var(--text-primary)] text-sm font-medium" href="tools & data.html">Tools & Data</a>
-<a class="text-[var(--text-primary)] text-sm font-bold" href="about.html">About</a>
-</nav>
-<div class="flex items-center gap-2">
-<button class="flex max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-md h-10 bg-[var(--secondary-color)] text-[var(--text-primary)] gap-2 text-sm font-bold tracking-wide min-w-0 px-3 hover:bg-[var(--accent-color)] transition-colors">
-<div class="text-[var(--text-primary)]" data-icon="MagnifyingGlass" data-size="20px" data-weight="regular">
+<nav class="flex items-center gap-8 text-base font-medium text-text-secondary">
+<a class="hover:text-primary-color transition-colors" href="index.html">Home</a>
+<a class="text-primary-color font-bold transition-colors" href="research.html">Research</a>
+<a class="hover:text-primary-color transition-colors" href="lab.html">People</a>
+<a class="hover:text-primary-color transition-colors" href="media & talks.html">Media & Talks</a>
+<a class="hover:text-primary-color transition-colors" href="tools & data.html">Tools & Data</a>
+<a class="hover:text-primary-color transition-colors" href="about.html">About</a>
+<a class="hover:text-primary-color transition-colors" href="mailto:tcostello@cmu.edu">Contact</a>
+<button class="button_secondary flex items-center justify-center p-2 rounded-full">
 <svg fill="currentColor" height="20px" viewBox="0 0 256 256" width="20px" xmlns="http://www.w3.org/2000/svg">
 <path d="M229.66,218.34l-50.07-50.06a88.11,88.11,0,1,0-11.31,11.31l50.06,50.07a8,8,0,0,0,11.32-11.32ZM40,112a72,72,0,1,1,72,72A72.08,72.08,0,0,1,40,112Z"></path>
 </svg>
-</div>
 </button>
-<button class="flex max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-md h-10 bg-[var(--secondary-color)] text-[var(--text-primary)] gap-2 text-sm font-bold tracking-wide min-w-0 px-3 hover:bg-[var(--accent-color)] transition-colors">
-<div class="text-[var(--text-primary)]" data-icon="List" data-size="20px" data-weight="regular">
-<svg fill="currentColor" height="20px" viewBox="0 0 256 256" width="20px" xmlns="http://www.w3.org/2000/svg">
-<path d="M224,128a8,8,0,0,1-8,8H40a8,8,0,0,1,0-16H216A8,8,0,0,1,224,128ZM40,72H216a8,8,0,0,0,0-16H40a8,8,0,0,0,0,16ZM216,184H40a8,8,0,0,0,0,16H216a8,8,0,0,0,0-16Z"></path>
-</svg>
-</div>
-</button>
-<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-10" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuD5GFlZWAxkpNwDyMkJwrd9HJVdZ4L1YMX0HP5mrpiZjzkXxTU0I7T1y4v1vRZ6h-jzn9381XP0Li75UHpwGdMxovC8_RHpJgwI7L-QBTTPDjXca0K75gYvJ8rjoeByQNc9bplCgEHP8PAVeo84bjm4L8OER-h6If7Ebi07FVCNgBnURZ7dSomwcggBMj4s3c6KNdBTMGi6KU86ZdXhD1P4tDrBunlY3qLpc9bv-_9Vhz2DV2Smwj6boCM0NL_Uo6zd5yGFkK4IY4Cd");'></div>
-</div>
-</div>
+</nav>
 </header>
 <main class="flex-1 justify-center py-10 px-4 sm:px-6 lg:px-8">
 <div class="layout-content-container mx-auto max-w-5xl">

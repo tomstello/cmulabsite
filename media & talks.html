@@ -46,27 +46,24 @@
     </style>
 </head>
 <body class="bg-[var(--background-color)] text-[var(--text-primary)]">
-<div class="relative flex size-full min-h-screen flex-col overflow-x-hidden">
+<div class="relative flex size-full min-h-screen flex-col overflow-x-hidden group/design-root">
 <div class="layout-container flex h-full grow flex-col">
-<header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-[var(--accent-color)] px-10 py-4">
-<div class="flex items-center gap-4 text-[var(--text-primary)]">
-<div class="size-6 text-[var(--primary-color)]">
-<svg fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
-<path clip-rule="evenodd" d="M12.0799 24L4 19.2479L9.95537 8.75216L18.04 13.4961L18.0446 4H29.9554L29.96 13.4961L38.0446 8.75216L44 19.2479L35.92 24L44 28.7521L38.0446 39.2479L29.96 34.5039L29.9554 44H18.0446L18.04 34.5039L9.95537 39.2479L4 28.7521L12.0799 24Z" fill="currentColor" fill-rule="evenodd"></path>
+<header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-accent-color px-10 py-4">
+<div class="flex items-center gap-3">
+<svg class="h-8 w-8 text-primary-color" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+<path clip-rule="evenodd" d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM12 20C7.59 20 4 16.41 4 12C4 7.59 7.59 4 12 4C16.41 4 20 7.59 20 12C20 16.41 16.41 20 12 20ZM13 7H11V11H7V13H11V17H13V13H17V11H13V7Z" fill-rule="evenodd"></path>
 </svg>
+<h2 class="text-primary-color text-2xl font-bold tracking-tight">Costello Lab</h2>
 </div>
-<h2 class="text-[var(--text-primary)] text-xl font-bold leading-tight tracking-tight">Dr. Tom Costello</h2>
-</div>
-<nav class="flex flex-1 justify-end gap-8">
-<div class="flex items-center gap-9 text-sm font-medium">
-<a class="text-[var(--text-secondary)] hover:text-[var(--text-primary)] text-sm font-medium" href="index.html">Home</a>
-<a class="text-[var(--text-secondary)] hover:text-[var(--text-primary)] text-sm font-medium" href="research.html">Research</a>
-<a class="text-[var(--text-secondary)] hover:text-[var(--text-primary)] text-sm font-medium" href="lab.html">People</a>
-<a class="text-[var(--text-secondary)] hover:text-[var(--text-primary)] text-sm font-medium" href="media & talks.html">Media & Talks</a>
-<a class="text-[var(--text-secondary)] hover:text-[var(--text-primary)] text-sm font-medium" href="tools & data.html">Tools & Data</a>
-<a class="text-[var(--text-primary)] text-sm font-bold" href="about.html">About</a>
-</div>
-<button class="flex items-center justify-center rounded-md h-10 w-10 bg-[var(--secondary-color)] text-[var(--text-primary)] hover:bg-[var(--accent-color)] transition-colors">
+<nav class="flex items-center gap-8 text-base font-medium text-text-secondary">
+<a class="hover:text-primary-color transition-colors" href="index.html">Home</a>
+<a class="hover:text-primary-color transition-colors" href="research.html">Research</a>
+<a class="hover:text-primary-color transition-colors" href="lab.html">People</a>
+<a class="text-primary-color font-bold transition-colors" href="media & talks.html">Media & Talks</a>
+<a class="hover:text-primary-color transition-colors" href="tools & data.html">Tools & Data</a>
+<a class="hover:text-primary-color transition-colors" href="about.html">About</a>
+<a class="hover:text-primary-color transition-colors" href="mailto:tcostello@cmu.edu">Contact</a>
+<button class="button_secondary flex items-center justify-center p-2 rounded-full">
 <svg fill="currentColor" height="20px" viewBox="0 0 256 256" width="20px" xmlns="http://www.w3.org/2000/svg">
 <path d="M229.66,218.34l-50.07-50.06a88.11,88.11,0,1,0-11.31,11.31l50.06,50.07a8,8,0,0,0,11.32-11.32ZM40,112a72,72,0,1,1,72,72A72.08,72.08,0,0,1,40,112Z"></path>
 </svg>
@@ -138,7 +135,7 @@
 <section>
 <h2 class="typography_h2 border-b border-[var(--accent-color)] pb-3 mb-8">Press Highlights</h2>
 <div class="space-y-8">
-<a class="group block" href="#">
+<a class="group block" href="https://www.nytimes.com/2023/10/26/opinion/ai-persuasion-elections.html" target="_blank">
 <div class="flex flex-col md:flex-row items-start gap-6 md:gap-8 p-6 rounded-lg border border-transparent group-hover:border-[var(--accent-color)] group-hover:bg-gray-50 transition-all duration-300">
 <div class="flex flex-col gap-1 flex-1 order-2 md:order-1">
 <p class="text-[var(--text-primary)] text-xl font-bold leading-tight">AI can now persuade people. We have a choice about how it does it.</p>
@@ -147,7 +144,7 @@
 <div class="w-full md:w-48 lg:w-56 h-32 md:h-auto md:aspect-square bg-center bg-cover rounded-md flex-shrink-0 order-1 md:order-2 shadow-sm" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCQILcb8mhFgA05N5gJJ5P4l35Ix9ZGwGWAqYcXtOKJDLBr9T4EQVmYHV-Pqm_X8NAuLKfkAYuUjYIgHcgZRM4eB8hiXhjiFKuvpFL8vmE9TFB22Nl4ELpG3ZGCUrgiNnwf3NRnA7CeGp0QtuVYOONQ0th1DQ2GFPNnOzo-KxaHEyHWRMrBdxsGTMyFSUhWbCn1Vp99PX75BqI_i_itCvm2rlN1Cah2UawhoOCCofAVXzD78_INEL0ufn-evbxFf1dMW4fT9iJ2wAgp");'></div>
 </div>
 </a>
-<a class="group block" href="#">
+<a class="group block" href="https://www.wired.com/story/wired-guide-to-ai/" target="_blank">
 <div class="flex flex-col md:flex-row items-start gap-6 md:gap-8 p-6 rounded-lg border border-transparent group-hover:border-[var(--accent-color)] group-hover:bg-gray-50 transition-all duration-300">
 <div class="flex flex-col gap-1 flex-1 order-2 md:order-1">
 <p class="text-[var(--text-primary)] text-xl font-bold leading-tight">The race to build trustworthy AI is on</p>
