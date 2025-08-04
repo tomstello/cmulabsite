@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>AI Persuasion &amp; Truth Lab - Tom Costello</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,200..800;1,200..800&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<style type="text/tailwindcss">
+      :root {
+        --primary-color: #141414;
+        --secondary-color: #f0f0f0;
+        --background-color: #ffffff;
+        --text-primary: #141414;
+        --text-secondary: #525252;
+        --accent-color: #e0e0e0;
+      }
+      body {
+        font-family: 'Newsreader', serif;
+        background-color: var(--background-color);
+        color: var(--text-primary);
+      }
+      .typography_h1 {
+        @apply text-4xl font-bold text-[var(--text-primary)] mb-4;
+      }
+      .typography_h2 {
+        @apply text-2xl font-semibold text-[var(--text-primary)] mb-3;
+      }
+      .typography_body {
+        @apply text-lg text-[var(--text-secondary)] leading-relaxed;
+      }
+      .button_primary {
+        @apply bg-[var(--primary-color)] text-white py-2 px-6 rounded-md hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[var(--primary-color)];
+      }
+      .button_secondary {
+        @apply bg-[var(--secondary-color)] text-[var(--text-primary)] py-2 px-6 rounded-md hover:bg-[var(--accent-color)] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[var(--accent-color)];
+      }
+      .card {
+        @apply bg-white rounded-lg shadow-sm;
+      }
+      .input {
+        @apply bg-white border border-gray-300 rounded-md py-2 px-3 focus:outline-none focus:ring-2 focus:ring-[var(--accent-color)] focus:border-transparent;
+      }
+    </style>
+</head>
+<body class="bg-[var(--background-color)]">
+<div class="min-h-screen flex flex-col font-sans">
+<header class="sticky top-0 bg-[var(--background-color)] bg-opacity-80 backdrop-blur-md z-50">
+<div class="container mx-auto px-6 sm:px-10">
+<div class="flex items-center justify-between border-b border-[var(--accent-color)] py-4">
+<div class="flex items-center gap-3">
+<a class="flex items-center gap-3 text-[var(--text-primary)]" href="#">
+<svg class="h-6 w-6" fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path clip-rule="evenodd" d="M24 4H6V17.3333V30.6667H24V44H42V30.6667V17.3333H24V4Z" fill="currentColor" fill-rule="evenodd"></path>
+</svg>
+<span class="text-xl font-bold tracking-tight">Tom Costello</span>
+</a>
+</div>
+<nav class="hidden md:flex items-center gap-8">
+<a class="text-sm font-medium text-[var(--text-secondary)] hover:text-[var(--text-primary)] transition-colors" href="#">Home</a>
+<a class="text-sm font-medium text-[var(--text-secondary)] hover:text-[var(--text-primary)] transition-colors" href="#">Research</a>
+<a class="text-sm font-medium text-[var(--text-secondary)] hover:text-[var(--text-primary)] transition-colors" href="#">Publications</a>
+<a class="text-sm font-bold text-[var(--text-primary)]" href="#">Lab</a>
+<a class="text-sm font-medium text-[var(--text-secondary)] hover:text-[var(--text-primary)] transition-colors" href="#">Teaching</a>
+<a class="text-sm font-medium text-[var(--text-secondary)] hover:text-[var(--text-primary)] transition-colors" href="#">CV</a>
+</nav>
+<div class="flex items-center gap-4">
+<button class="md:hidden p-2 rounded-md hover:bg-[var(--secondary-color)]">
+<svg fill="currentColor" height="20px" viewBox="0 0 256 256" width="20px" xmlns="http://www.w3.org/2000/svg">
+<path d="M224,128a8,8,0,0,1-8,8H40a8,8,0,0,1,0-16H216A8,8,0,0,1,224,128ZM40,72H216a8,8,0,0,0,0-16H40a8,8,0,0,0,0,16ZM216,184H40a8,8,0,0,0,0,16H216a8,8,0,0,0,0-16Z"></path>
+</svg>
+</button>
+<div class="w-10 h-10 rounded-full bg-cover bg-center" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuA_OXoiWRGEAJTDz_n6nu9xot0xFX0v0o3NyR272612JfSIw7QVZcZlD06ylycC7fQHo3BcIzC5JxjbQmwicYeXpkZ-SZs6OncJhcLAY6x0XuXzpURolNAiaMH0T_0PoAc2DaqdNJQLCIKW-bPl8wMPy7SRJXMcORJgDodwV4bhvpMqy1klHx7nF5Kbo-qunTUG7QgthvvtU-RkN44n0hSyrvLCkB4ncwH-3a0PK6XRhLO44YSo-39FDjHuKlfPEliagQqYdj4yjP8K");'></div>
+</div>
+</div>
+</div>
+</header>
+<main class="flex-grow">
+<section class="py-16 md:py-24">
+<div class="container mx-auto px-6 sm:px-10">
+<div class="max-w-4xl mx-auto">
+<h1 class="typography_h1 text-center text-5xl !font-medium">AI Persuasion &amp; Truth Lab</h1>
+<p class="typography_body mt-6 text-center">
+                The AI Persuasion &amp; Truth Lab at Carnegie Mellon University, led by Dr. Tom Costello, explores the intersection of artificial intelligence, persuasion, and truth. Our mission is to develop AI systems that can effectively communicate and persuade while upholding principles of truthfulness and ethical conduct. We investigate how AI can be used to promote understanding, facilitate informed decision-making, and combat misinformation. Our research spans various domains, including health communication, political discourse, and educational technologies.
+              </p>
+</div>
+</div>
+</section>
+<section class="py-16 md:py-24 bg-[var(--secondary-color)]">
+<div class="container mx-auto px-6 sm:px-10">
+<h2 class="typography_h2 text-center !font-medium">Our Funding Partners</h2>
+<div class="mt-12 grid grid-cols-2 md:grid-cols-4 gap-8 items-center">
+<div class="flex justify-center">
+<div class="w-32 h-32 bg-cover bg-center rounded-full" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuD7LbMRclRxJ32P5prjoBq1Qn5rHG8J7D1G5skWkX54Zeg8LZzfKUZ48SgQa1vDL10zgsJp5twOiwX7CD59HNZZWw6pNd6GJnTWr2wgHiaWXZp1tv6wYntWNCsaHDxLIZ2UxA6xj-fASxijnKOLBiPQVInSGxw1nkmpOQxWZS-WNnp7eto3yIBPszthpNayfX3anaRL6h2Mlm_F-YShNetpcTkpTwVlMVd6gz3f7f6inHuiEhE1r2TmMumHMmMBKMU-_HfiN7eAU2C1");'></div>
+</div>
+<div class="flex justify-center">
+<div class="w-32 h-32 bg-cover bg-center rounded-full" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDC2R1e5oE9bBVACKI9Wj0TwEQMyD90I8x_fIFzfFK2o66NHBiH4C8Z0iE2uUk28gegkxeKTZ8fG7o8lyIKMJNHSfuZXCFgahoYeX2ESMLhi0ORcknpP1RdHspXf2iOmA033J29nHTmk2QMuZirvCR5jbXWEmHRMJ4VCw98FfdEOca7obrSuxmZlSmN6EIOWhdSqQA61ECilxjw5PWNbHn3wdTW7UOx0oTL_wlHvg5hmZxj0g3ZOsG0ZyO0vHezE6OiUBUkj1yFav9w");'></div>
+</div>
+<div class="flex justify-center">
+<div class="w-32 h-32 bg-cover bg-center rounded-full" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuC6ILnp4yfm18VoqA9F-UFfVmPlM-KtAirhUppqaqMagHbdBBDQamHbqUNpNv_SR0tODnJ5yqUApOE0L-J4R1ZGkWaFAVtEV_3soqljlwKxNRf_HMnBaRKu5-KX3kiJhbSjE5a5auyzyfeyVTKmY8CYgzSU_QvMwyJ1zzlAicT_VjnR62GfvWYfximhwpp1hXRcgQizJr4N9JpMpnFRnYaEcSJ3VvvhPHw1BsNMNP5p0aapT5JuNWEJ6qr69uMjiuDvwJrMnAJFCE13");'></div>
+</div>
+<div class="flex justify-center">
+<div class="w-32 h-32 bg-cover bg-center rounded-full" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuC80fjPCtKLJwi_VqwaQgZC1GmqdvzxxZi-2V9P9CdNFA2pZzvtqqo4GchDGFNkiNxRI77BFPOPPenpkUczE603e_Iv1xFMgnMz8vLX9hopY2FB28P_EPlZZuzPjUhVP5PA6iwBwSBQgZVVKnE9vefqJfksA79LSC3g_cnFPe7V6_VIH6yn2L5HAr11NS0BaCF1BlW-fsbKzttn1TVpuR1zTEoUol5Z-b1P38X2lTnYhJ5mlR8v5COcYNZKbSCUClpe2cGVv1h-ybVS");'></div>
+</div>
+</div>
+</div>
+</section>
+<section class="py-16 md:py-24">
+<div class="container mx-auto px-6 sm:px-10">
+<div class="max-w-4xl mx-auto">
+<h2 class="typography_h2 text-center !font-medium">Our Lab Culture</h2>
+<p class="typography_body mt-6 text-center">
+                Our lab fosters a collaborative and inclusive environment where researchers from diverse backgrounds can thrive. We value intellectual curiosity, rigorous research, and a commitment to making a positive impact on society. We regularly engage in team-building activities, workshops, and social events to strengthen our community and support each other's growth.
+              </p>
+</div>
+<div class="mt-12 grid grid-cols-2 lg:grid-cols-4 gap-4">
+<div class="col-span-2 row-span-2 rounded-lg overflow-hidden">
+<div class="w-full h-full bg-cover bg-center transition-transform duration-300 hover:scale-105" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuA6SMUtMH1xtO-2Zc-chxClPmhiNvvhEdfAEYrbJo3uaWAbCF8SzI1pzJdgxUXNftp-4ZXJtvinMkS0VBMg6sMSZkau4e7gJtzZf8n_LUNa7oxav8DNRIU__h-PER9cmz8YMbFTaFcqL0TAj_OTxFH9kfFM_O8oyfqX8gQEeGSJsNU4Yj7DO1Dt2X9UY_BC33pjrQv9l_h1y5n6qFHZpzLCUy1aDJ40NcEEdEPCh6Uq7pX0GzWkd2EuveuljMPGkp__RXRnhM4Wrz9y");'></div>
+</div>
+<div class="rounded-lg overflow-hidden">
+<div class="w-full h-full pb-[100%] bg-cover bg-center transition-transform duration-300 hover:scale-105" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCBkhZ-vtrCFSh13s1xgHAIZ41-l6Dcw-RRzULmBxSreb4qYPYKdBUUQuINakCrOVxxWthA-Nwb9xKJLdR9P2z28zmUodpzheFI4sODt8eSYlbg5dlrJnhNfmvW_8qM7hCOHhuOtB50b7KgENeKqQ7AtH9ghCVg-32RdnYcXA0QcnKOBMN7qEblDB2l3U0z0dp4rzzYZL5Kf2l9vgBuF1_V083ePUYCRoQXPV2WYt5F4FQ6dGsC2QUAZNskNdVciKCa66h0fTygokZ9");'></div>
+</div>
+<div class="rounded-lg overflow-hidden">
+<div class="w-full h-full pb-[100%] bg-cover bg-center transition-transform duration-300 hover:scale-105" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCR-jnrsOvUAvPMds5WqEMIZOylMNGqkINC7fZrysiS0vbtl_qo-HFU7QgtDKkFkTkGa19R5BmUUoyOhttcmHS1A5aXl2FVmVMBgMBf0MjAlZK7KWOqO4m7NcwJ4AAduGPySJfGhXLIZ3WoEOWO_BUKvTkCAJOLZ6GoMFctEizJUnqtHaEelBtktgqMGo_31mnXdgmTn-CEjYi32yd28wPvCf0ggw1_4epHyrAytHgznxHeyKTz9eNeyASS0sgf7PZ2x2YARt-SSZpz");'></div>
+</div>
+<div class="col-span-2 rounded-lg overflow-hidden">
+<div class="w-full h-full pb-[50%] bg-cover bg-center transition-transform duration-300 hover:scale-105" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDxTd-6lwPjNhbIHxrxMde8ZSCKSsQz-jqGCgFbghwxM1MDW4ci9gxZ-3wZiaJSAeHKH1LxcYn8cRbISnR3evKlUck2jOgjTqD5EymQW9wHMjg7M4q_EaY30JqMnxgg6OXN77lgCdXy1uuhoXKqig59k88egdgP26f5fXhz6W8SSqTBbUUH-TSoClOj4ZPZYCMqshJeVzh2yVtqg1ipIc55e_7Uz7X8Hu8FMEXalWiiAOfesld44nmJm0KSEtR5iQ5mQFKHR6IZGVyk");'></div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<footer class="bg-[var(--primary-color)] text-white">
+<div class="container mx-auto px-6 sm:px-10 py-8">
+<div class="flex flex-col md:flex-row justify-between items-center">
+<p class="text-sm text-[var(--text-secondary)]">© 2024 Tom Costello. All Rights Reserved.</p>
+<div class="flex gap-4 mt-4 md:mt-0">
+<a class="text-[var(--text-secondary)] hover:text-white" href="#">Twitter</a>
+<a class="text-[var(--text-secondary)] hover:text-white" href="#">LinkedIn</a>
+<a class="text-[var(--text-secondary)] hover:text-white" href="#">Email</a>
+</div>
+</div>
+</div>
+</footer>
+</div>
+
+</body></html>

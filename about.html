@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>About Tom Costello</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<style type="text/tailwindcss">
+      :root {
+        --primary-color: #141414;
+        --secondary-color: #f0f0f0;
+        --background-color: #ffffff;
+        --text-primary: #141414;
+        --text-secondary: #525252;
+        --accent-color: #e0e0e0;
+      }
+      body {
+        font-family: 'Newsreader', serif;
+        background-color: var(--background-color);
+        color: var(--text-primary);
+      }
+      .typography_h1 {
+        @apply text-3xl font-bold text-[var(--text-primary)] mb-4;
+      }
+      .typography_h2 {
+        @apply text-2xl font-semibold text-[var(--text-primary)] mb-3;
+      }
+      .typography_body {
+        @apply text-base text-[var(--text-secondary)];
+      }
+      .button_primary {
+        @apply bg-[var(--primary-color)] text-white py-2 px-4 rounded-md hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-[var(--primary-color)] focus:ring-opacity-50;
+      }
+      .button_secondary {
+        @apply bg-[var(--secondary-color)] text-[var(--text-primary)] py-2 px-4 rounded-md hover:bg-gray-200 focus:outline-none focus:ring-2 focus:ring-[var(--accent-color)] focus:ring-opacity-50;
+      }
+      .card {
+        @apply bg-white rounded-md shadow-md p-6;
+      }
+      .input {
+        @apply bg-white border border-gray-300 rounded-md py-2 px-3 focus:outline-none focus:ring-2 focus:ring-[var(--accent-color)] focus:border-transparent;
+      }
+      .main_container {
+        @apply container mx-auto px-4 py-8;
+      }
+    </style>
+</head>
+<body class="bg-[var(--background-color)] text-[var(--text-primary)]">
+<div class="relative flex size-full min-h-screen flex-col overflow-x-hidden">
+<div class="main_container">
+<header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-[var(--accent-color)] px-6 py-4">
+<div class="flex items-center gap-4 text-[var(--primary-color)]">
+<svg class="h-6 w-6" fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path clip-rule="evenodd" d="M12.0799 24L4 19.2479L9.95537 8.75216L18.04 13.4961L18.0446 4H29.9554L29.96 13.4961L38.0446 8.75216L44 19.2479L35.92 24L44 28.7521L38.0446 39.2479L29.96 34.5039L29.9554 44H18.0446L18.04 34.5039L9.95537 39.2479L4 28.7521L12.0799 24Z" fill="currentColor" fill-rule="evenodd"></path>
+</svg>
+<h1 class="text-[var(--primary-color)] text-xl font-bold leading-tight">Dr. Tom Costello</h1>
+</div>
+<nav class="hidden md:flex items-center gap-8">
+<a class="text-[var(--text-secondary)] hover:text-[var(--text-primary)] text-sm font-medium" href="#">Home</a>
+<a class="text-[var(--text-secondary)] hover:text-[var(--text-primary)] text-sm font-medium" href="#">Research</a>
+<a class="text-[var(--text-secondary)] hover:text-[var(--text-primary)] text-sm font-medium" href="#">Publications</a>
+<a class="text-[var(--text-secondary)] hover:text-[var(--text-primary)] text-sm font-medium" href="#">Teaching</a>
+<a class="text-[var(--text-primary)] text-sm font-bold" href="#">About</a>
+</nav>
+<button class="md:hidden p-2 rounded-md hover:bg-[var(--secondary-color)]">
+<svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M4 6h16M4 12h16m-7 6h7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+</button>
+</header>
+<main class="flex-1 px-4 sm:px-6 lg:px-8 py-10">
+<div class="max-w-4xl mx-auto">
+<h2 class="typography_h1 border-b pb-4 mb-8">About Tom</h2>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-12 items-start">
+<div class="md:col-span-1 flex flex-col items-center text-center">
+<div class="relative mb-4">
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full w-40 h-40" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAGaTBSCf1lfih65FV2RlQpVc8meNHGM4jsVJL8upOkvtle_dTcmIlfhcLd0RGx4wvHN2IMTZRcbXgfWykZOtpYPw6K-bGBLOyVHJKkLVPxoaxYADiQSukzwNWgilgdzZW7kLJnmAqP8Vrg3pFpYWESVJ8Zjrx2zaWgwW5Kcx-AxYe5s6Aac-FYGfsuBjxOAlzFydzoRSXWvQGqo-yvVXUBvfXo4oJOln0VqZb_m6rxSWdGieB6_tGROAkEOea6trZ8OqIIxRGQ3U-J");'></div>
+</div>
+<h3 class="text-xl font-bold">Dr. Tom Costello</h3>
+<p class="typography_body">Assistant Professor, Carnegie Mellon University</p>
+<p class="typography_body">Founder, AI Persuasion &amp; Truth Lab</p>
+</div>
+<div class="md:col-span-2">
+<p class="typography_body text-lg leading-relaxed mb-8">
+                  Dr. Tom Costello is an Assistant Professor at Carnegie Mellon University and the founder of the AI Persuasion &amp; Truth Lab. His research focuses on the intersection of artificial intelligence, persuasion, and truth, exploring how AI can be used to promote truth and combat misinformation. Dr. Costello's work has been recognized with numerous awards, including the National Science Foundation CAREER Award and the Association for Computing Machinery Doctoral Dissertation Award. He holds a Ph.D. in Computer Science from Stanford University and a B.S. in Computer Science from the University of California, Berkeley.
+                </p>
+<div class="space-y-6">
+<div>
+<h4 class="typography_h2 border-b pb-2 mb-4">Awards</h4>
+<ul class="space-y-3 list-none">
+<li class="flex items-start">
+<svg class="w-5 h-5 text-[var(--primary-color)] mr-3 mt-1 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path clip-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" fill-rule="evenodd"></path></svg>
+<span class="typography_body">National Science Foundation CAREER Award</span>
+</li>
+<li class="flex items-start">
+<svg class="w-5 h-5 text-[var(--primary-color)] mr-3 mt-1 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path clip-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" fill-rule="evenodd"></path></svg>
+<span class="typography_body">Association for Computing Machinery Doctoral Dissertation Award</span>
+</li>
+</ul>
+</div>
+<div>
+<h4 class="typography_h2 border-b pb-2 mb-4">CV</h4>
+<button class="button_secondary flex items-center gap-2">
+<svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg>
+                      Download CV
+                    </button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</main>
+</div>
+</div>
+
+</body></html>

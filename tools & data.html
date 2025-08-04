@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Tom Costello - Tools &amp; Data</title>
+<link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect"/>
+<link as="style" href="https://fonts.googleapis.com/css2?display=swap&amp;family=Newsreader%3Awght%40400%3B500%3B700%3B800&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900" onload="this.rel='stylesheet'" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<style type="text/tailwindcss">
+      :root {
+        --primary-color: #141414;
+        --secondary-color: #f0f0f0;
+        --background-color: #ffffff;
+        --text-primary: #141414;
+        --text-secondary: #525252;
+        --accent-color: #e0e0e0;
+      }
+      body {
+        font-family: "Newsreader", sans-serif;
+        background-color: var(--background-color);
+        color: var(--text-primary);
+      }
+      .typography_h1 {
+        @apply text-3xl font-bold text-[var(--text-primary)] mb-4;
+      }
+      .typography_h2 {
+        @apply text-2xl font-semibold text-[var(--text-primary)] mb-3;
+      }
+      .typography_body {
+        @apply text-base text-[var(--text-secondary)];
+      }
+      .card {
+        @apply bg-white rounded-md shadow-md p-6;
+      }
+      .button_primary {
+        @apply bg-[var(--primary-color)] text-white py-2 px-4 rounded-md hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-[var(--primary-color)] focus:ring-opacity-50;
+      }
+      .button_secondary {
+        @apply bg-[var(--secondary-color)] text-[var(--text-primary)] py-2 px-4 rounded-md hover:bg-gray-200 focus:outline-none focus:ring-2 focus:ring-[var(--accent-color)] focus:ring-opacity-50;
+      }
+      .input {
+        @apply bg-white border border-gray-300 rounded-md py-2 px-3 focus:outline-none focus:ring-2 focus:ring-[var(--accent-color)] focus:border-transparent;
+      }
+    </style>
+</head>
+<body class="font-newsreader bg-background-color text-text-primary">
+<div class="relative flex size-full min-h-screen flex-col overflow-x-hidden">
+<div class="flex h-full grow flex-col">
+<header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-b-[var(--accent-color)] px-10 py-4 shadow-sm">
+<div class="flex items-center gap-4">
+<div class="size-6 text-[var(--primary-color)]">
+<svg fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path clip-rule="evenodd" d="M24 4H6V17.3333V30.6667H24V44H42V30.6667V17.3333H24V4Z" fill="currentColor" fill-rule="evenodd"></path>
+</svg>
+</div>
+<h1 class="text-2xl font-bold tracking-tight text-[var(--primary-color)]">Tom Costello</h1>
+</div>
+<nav class="flex items-center gap-8">
+<a class="text-sm font-medium text-[var(--text-primary)] hover:text-[var(--text-secondary)] transition-colors" href="#">Home</a>
+<a class="text-sm font-medium text-[var(--text-primary)] hover:text-[var(--text-secondary)] transition-colors" href="#">Research</a>
+<a class="text-sm font-medium text-[var(--text-primary)] hover:text-[var(--text-secondary)] transition-colors" href="#">Publications</a>
+<a class="text-sm font-medium text-[var(--text-primary)] hover:text-[var(--text-secondary)] transition-colors" href="#">Teaching</a>
+<a class="text-sm font-bold text-[var(--primary-color)]" href="#">Tools &amp; Data</a>
+<a class="text-sm font-medium text-[var(--text-primary)] hover:text-[var(--text-secondary)] transition-colors" href="#">Contact</a>
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-10" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuA82Ntvtr0Gys4nLgeVu9KzTeLokUP5p-1yhlBIHd5WKh-Ehw0EomZq7AfX_UZsBCvO6BVC-QL3z5XkcR1REZoS8FbObWoo--B6b_NcnvF9wGmibNp6TNAtQQo-COTdY9N7QuW76w0UiSYykJNAdEa2LvdAjxWf46mhQ59rQPmW8vcOlEf_sQEd1Dy63BbRY_mPr3TqzD5CF2cKcblxIsLI1d95UvU-euykKgaBYe2-LhMwe2CKbURdgM4H1AnZsQwkBhd2mGy_L7oH");'></div>
+</nav>
+</header>
+<main class="container mx-auto px-4 py-12 md:px-6 lg:px-8">
+<div class="max-w-4xl mx-auto">
+<header class="mb-12">
+<h1 class="typography_h1 text-4xl leading-tight">Tools &amp; Data</h1>
+<p class="typography_body mt-4 max-w-2xl">
+                Welcome to the Tools &amp; Data page! Here you'll find links to RMarkdown pipelines, GitHub repositories, and Qualtrics templates that support our research. These
+                resources are designed to help you replicate our studies, analyze data, and design your own experiments. Please explore the links below to access these valuable
+                tools.
+              </p>
+</header>
+<section class="space-y-10">
+<div>
+<h2 class="typography_h2 border-b border-[var(--accent-color)] pb-3 mb-6">RMarkdown Pipelines</h2>
+<p class="typography_body mb-6">
+                  Our RMarkdown pipelines provide a structured approach to data analysis, ensuring reproducibility and transparency in our research. These pipelines include scripts for
+                  data cleaning, preprocessing, statistical analysis, and visualization. Each pipeline is tailored to a specific study and includes detailed documentation to guide you
+                  through the process.
+                </p>
+<div class="space-y-4">
+<a class="group flex items-center justify-between p-4 rounded-md border border-[var(--accent-color)] hover:bg-[var(--secondary-color)] transition-colors" href="#">
+<span class="font-medium text-[var(--text-primary)]">Pipeline for Study 1</span>
+<svg class="text-[var(--text-secondary)] group-hover:text-[var(--text-primary)] transform transition-transform group-hover:translate-x-1" fill="currentColor" height="24px" viewBox="0 0 256 256" width="24px" xmlns="http://www.w3.org/2000/svg">
+<path d="M221.66,133.66l-72,72a8,8,0,0,1-11.32-11.32L196.69,136H40a8,8,0,0,1,0-16H196.69L138.34,61.66a8,8,0,0,1,11.32-11.32l72,72A8,8,0,0,1,221.66,133.66Z"></path>
+</svg>
+</a>
+<a class="group flex items-center justify-between p-4 rounded-md border border-[var(--accent-color)] hover:bg-[var(--secondary-color)] transition-colors" href="#">
+<span class="font-medium text-[var(--text-primary)]">Pipeline for Study 2</span>
+<svg class="text-[var(--text-secondary)] group-hover:text-[var(--text-primary)] transform transition-transform group-hover:translate-x-1" fill="currentColor" height="24px" viewBox="0 0 256 256" width="24px" xmlns="http://www.w3.org/2000/svg">
+<path d="M221.66,133.66l-72,72a8,8,0,0,1-11.32-11.32L196.69,136H40a8,8,0,0,1,0-16H196.69L138.34,61.66a8,8,0,0,1,11.32-11.32l72,72A8,8,0,0,1,221.66,133.66Z"></path>
+</svg>
+</a>
+</div>
+</div>
+<div>
+<h2 class="typography_h2 border-b border-[var(--accent-color)] pb-3 mb-6">GitHub Repositories</h2>
+<p class="typography_body mb-6">
+                  Our GitHub repositories host the code and resources for our research projects. You'll find implementations of our models, experimental designs, and data analysis
+                  scripts. Each repository includes a README file with instructions on how to set up and run the code. We encourage you to fork these repositories, contribute to the
+                  code, and adapt it for your own research.
+                </p>
+<div class="space-y-4">
+<a class="group flex items-center justify-between p-4 rounded-md border border-[var(--accent-color)] hover:bg-[var(--secondary-color)] transition-colors" href="#">
+<span class="font-medium text-[var(--text-primary)]">Repository for Project A</span>
+<svg class="text-[var(--text-secondary)] group-hover:text-[var(--text-primary)] transform transition-transform group-hover:translate-x-1" fill="currentColor" height="24px" viewBox="0 0 256 256" width="24px" xmlns="http://www.w3.org/2000/svg">
+<path d="M221.66,133.66l-72,72a8,8,0,0,1-11.32-11.32L196.69,136H40a8,8,0,0,1,0-16H196.69L138.34,61.66a8,8,0,0,1,11.32-11.32l72,72A8,8,0,0,1,221.66,133.66Z"></path>
+</svg>
+</a>
+<a class="group flex items-center justify-between p-4 rounded-md border border-[var(--accent-color)] hover:bg-[var(--secondary-color)] transition-colors" href="#">
+<span class="font-medium text-[var(--text-primary)]">Repository for Project B</span>
+<svg class="text-[var(--text-secondary)] group-hover:text-[var(--text-primary)] transform transition-transform group-hover:translate-x-1" fill="currentColor" height="24px" viewBox="0 0 256 256" width="24px" xmlns="http://www.w3.org/2000/svg">
+<path d="M221.66,133.66l-72,72a8,8,0,0,1-11.32-11.32L196.69,136H40a8,8,0,0,1,0-16H196.69L138.34,61.66a8,8,0,0,1,11.32-11.32l72,72A8,8,0,0,1,221.66,133.66Z"></path>
+</svg>
+</a>
+</div>
+</div>
+<div>
+<h2 class="typography_h2 border-b border-[var(--accent-color)] pb-3 mb-6">Qualtrics Templates</h2>
+<p class="typography_body mb-6">
+                  We use Qualtrics for designing and conducting our online experiments. Here, you'll find templates for our experimental designs, including surveys, questionnaires, and
+                  experimental tasks. These templates are pre-configured with the necessary logic and randomization, making it easy for you to adapt and use them for your own studies.
+                </p>
+<div class="space-y-4">
+<a class="group flex items-center justify-between p-4 rounded-md border border-[var(--accent-color)] hover:bg-[var(--secondary-color)] transition-colors" href="#">
+<span class="font-medium text-[var(--text-primary)]">Template for Experiment X</span>
+<svg class="text-[var(--text-secondary)] group-hover:text-[var(--text-primary)] transform transition-transform group-hover:translate-x-1" fill="currentColor" height="24px" viewBox="0 0 256 256" width="24px" xmlns="http://www.w3.org/2000/svg">
+<path d="M221.66,133.66l-72,72a8,8,0,0,1-11.32-11.32L196.69,136H40a8,8,0,0,1,0-16H196.69L138.34,61.66a8,8,0,0,1,11.32-11.32l72,72A8,8,0,0,1,221.66,133.66Z"></path>
+</svg>
+</a>
+<a class="group flex items-center justify-between p-4 rounded-md border border-[var(--accent-color)] hover:bg-[var(--secondary-color)] transition-colors" href="#">
+<span class="font-medium text-[var(--text-primary)]">Template for Experiment Y</span>
+<svg class="text-[var(--text-secondary)] group-hover:text-[var(--text-primary)] transform transition-transform group-hover:translate-x-1" fill="currentColor" height="24px" viewBox="0 0 256 256" width="24px" xmlns="http://www.w3.org/2000/svg">
+<path d="M221.66,133.66l-72,72a8,8,0,0,1-11.32-11.32L196.69,136H40a8,8,0,0,1,0-16H196.69L138.34,61.66a8,8,0,0,1,11.32-11.32l72,72A8,8,0,0,1,221.66,133.66Z"></path>
+</svg>
+</a>
+</div>
+</div>
+</section>
+</div>
+</main>
+</div>
+</div>
+
+</body></html>

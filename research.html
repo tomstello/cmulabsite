@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect"/>
+<link as="style" href="https://fonts.googleapis.com/css2?display=swap&amp;family=Newsreader:wght@400;500;700;800&amp;family=Noto+Sans:wght@400;500;700;900" onload="this.rel='stylesheet'" rel="stylesheet"/>
+<title>Stitch Design</title>
+<link href="data:image/x-icon;base64," rel="icon" type="image/x-icon"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<style type="text/tailwindcss">
+      :root {
+        --primary-color: #141414;
+        --secondary-color: #f0f0f0;
+        --background-color: #ffffff;
+        --text-primary: #141414;
+        --text-secondary: #525252;
+        --accent-color: #e0e0e0;
+      }
+      body {
+        font-family: 'Newsreader', sans-serif;
+        background-color: var(--background-color);
+        color: var(--text-primary);
+      }
+      .card {
+        @apply bg-white rounded-md shadow-md p-6;
+      }
+      .button_primary {
+        @apply bg-[var(--primary-color)] text-white py-2 px-4 rounded-md hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-[var(--primary-color)] focus:ring-opacity-50;
+      }
+      .button_secondary {
+        @apply bg-[var(--secondary-color)] text-[var(--text-primary)] py-2 px-4 rounded-md hover:bg-gray-200 focus:outline-none focus:ring-2 focus:ring-[var(--accent-color)] focus:ring-opacity-50;
+      }
+      .input {
+        @apply bg-white border border-gray-300 rounded-md py-2 px-3 focus:outline-none focus:ring-2 focus:ring-[var(--accent-color)] focus:border-transparent;
+      }
+      .typography_h1 {
+        @apply text-3xl font-bold text-[var(--text-primary)] mb-4;
+      }
+      .typography_h2 {
+        @apply text-2xl font-semibold text-[var(--text-primary)] mb-3;
+      }
+      .typography_body {
+        @apply text-base text-[var(--text-secondary)];
+      }
+    </style>
+</head>
+<body class="relative flex size-full min-h-screen flex-col bg-[var(--background-color)] group/design-root overflow-x-hidden">
+<div class="layout-container flex h-full grow flex-col">
+<header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-b-[var(--accent-color)] px-10 py-4 shadow-sm">
+<div class="flex items-center gap-4 text-[var(--text-primary)]">
+<div class="size-6 text-[var(--primary-color)]">
+<svg fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path clip-rule="evenodd" d="M12.0799 24L4 19.2479L9.95537 8.75216L18.04 13.4961L18.0446 4H29.9554L29.96 13.4961L38.0446 8.75216L44 19.2479L35.92 24L44 28.7521L38.0446 39.2479L29.96 34.5039L29.9554 44H18.0446L18.04 34.5039L9.95537 39.2479L4 28.7521L12.0799 24Z" fill="currentColor" fill-rule="evenodd"></path>
+</svg>
+</div>
+<h2 class="text-[var(--text-primary)] text-xl font-bold tracking-tight">
+            Dr. Tom Costello
+          </h2>
+</div>
+<div class="flex flex-1 justify-end items-center gap-8">
+<nav class="flex items-center gap-9">
+<a class="text-[var(--text-secondary)] text-base font-medium hover:text-[var(--primary-color)] transition-colors" href="#">Home</a>
+<a class="text-[var(--primary-color)] text-base font-semibold border-b-2 border-[var(--primary-color)] pb-1" href="#">Research</a>
+<a class="text-[var(--text-secondary)] text-base font-medium hover:text-[var(--primary-color)] transition-colors" href="#">Teaching</a>
+<a class="text-[var(--text-secondary)] text-base font-medium hover:text-[var(--primary-color)] transition-colors" href="#">About</a>
+</nav>
+<div class="flex items-center gap-2">
+<button class="flex max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-md h-10 bg-[var(--secondary-color)] text-[var(--text-primary)] gap-2 text-sm font-bold tracking-wide min-w-0 px-3 hover:bg-[var(--accent-color)] transition-colors">
+<div class="text-[var(--text-primary)]" data-icon="MagnifyingGlass" data-size="20px" data-weight="regular">
+<svg fill="currentColor" height="20px" viewBox="0 0 256 256" width="20px" xmlns="http://www.w3.org/2000/svg">
+<path d="M229.66,218.34l-50.07-50.06a88.11,88.11,0,1,0-11.31,11.31l50.06,50.07a8,8,0,0,0,11.32-11.32ZM40,112a72,72,0,1,1,72,72A72.08,72.08,0,0,1,40,112Z"></path>
+</svg>
+</div>
+</button>
+<button class="flex max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-md h-10 bg-[var(--secondary-color)] text-[var(--text-primary)] gap-2 text-sm font-bold tracking-wide min-w-0 px-3 hover:bg-[var(--accent-color)] transition-colors">
+<div class="text-[var(--text-primary)]" data-icon="List" data-size="20px" data-weight="regular">
+<svg fill="currentColor" height="20px" viewBox="0 0 256 256" width="20px" xmlns="http://www.w3.org/2000/svg">
+<path d="M224,128a8,8,0,0,1-8,8H40a8,8,0,0,1,0-16H216A8,8,0,0,1,224,128ZM40,72H216a8,8,0,0,0,0-16H40a8,8,0,0,0,0,16ZM216,184H40a8,8,0,0,0,0,16H216a8,8,0,0,0,0-16Z"></path>
+</svg>
+</div>
+</button>
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-10" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuD5GFlZWAxkpNwDyMkJwrd9HJVdZ4L1YMX0HP5mrpiZjzkXxTU0I7T1y4v1vRZ6h-jzn9381XP0Li75UHpwGdMxovC8_RHpJgwI7L-QBTTPDjXca0K75gYvJ8rjoeByQNc9bplCgEHP8PAVeo84bjm4L8OER-h6If7Ebi07FVCNgBnURZ7dSomwcggBMj4s3c6KNdBTMGi6KU86ZdXhD1P4tDrBunlY3qLpc9bv-_9Vhz2DV2Smwj6boCM0NL_Uo6zd5yGFkK4IY4Cd");'></div>
+</div>
+</div>
+</header>
+<main class="flex-1 justify-center py-10 px-4 sm:px-6 lg:px-8">
+<div class="layout-content-container mx-auto max-w-5xl">
+<div class="px-4 py-8">
+<h1 class="typography_h1 text-4xl">Research</h1>
+</div>
+<section class="mb-16" id="publications">
+<h2 class="typography_h2 px-4 pb-4 pt-6">Publications</h2>
+<div class="card overflow-hidden">
+<div class="overflow-x-auto">
+<table class="w-full text-left">
+<thead>
+<tr class="bg-gray-50">
+<th class="p-4 text-sm font-semibold text-[var(--text-primary)]">Title</th>
+<th class="p-4 text-sm font-semibold text-[var(--text-primary)]">Authors</th>
+<th class="p-4 text-sm font-semibold text-[var(--text-primary)]">Year</th>
+<th class="p-4 text-sm font-semibold text-[var(--text-primary)]">Venue</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-[var(--accent-color)]">
+<tr class="hover:bg-gray-50">
+<td class="p-4 text-base font-medium text-[var(--text-primary)]">The Impact of AI-Generated Content on Public Discourse</td>
+<td class="p-4 typography_body">Costello, T., et al.</td>
+<td class="p-4 typography_body">2023</td>
+<td class="p-4 typography_body">Journal of Communication</td>
+</tr>
+<tr class="hover:bg-gray-50">
+<td class="p-4 text-base font-medium text-[var(--text-primary)]">Ethical Considerations in AI Persuasion</td>
+<td class="p-4 typography_body">Costello, T., &amp; Smith, J.</td>
+<td class="p-4 typography_body">2022</td>
+<td class="p-4 typography_body">AI Ethics Conference</td>
+</tr>
+<tr class="hover:bg-gray-50">
+<td class="p-4 text-base font-medium text-[var(--text-primary)]">AI and the Future of Truth</td>
+<td class="p-4 typography_body">Costello, T.</td>
+<td class="p-4 typography_body">2021</td>
+<td class="p-4 typography_body">Philosophy &amp; Technology</td>
+</tr>
+<tr class="hover:bg-gray-50">
+<td class="p-4 text-base font-medium text-[var(--text-primary)]">Persuasion in the Digital Age</td>
+<td class="p-4 typography_body">Costello, T., &amp; Brown, L.</td>
+<td class="p-4 typography_body">2020</td>
+<td class="p-4 typography_body">Media Psychology</td>
+</tr>
+<tr class="hover:bg-gray-50">
+<td class="p-4 text-base font-medium text-[var(--text-primary)]">The Role of AI in Shaping Beliefs</td>
+<td class="p-4 typography_body">Costello, T., et al.</td>
+<td class="p-4 typography_body">2019</td>
+<td class="p-4 typography_body">Cognitive Science</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</section>
+<section class="mb-16" id="grants">
+<h2 class="typography_h2 px-4 pb-4 pt-6">Grants</h2>
+<div class="card space-y-6">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-4 items-start">
+<h3 class="md:col-span-1 text-base font-semibold text-[var(--text-primary)]">NSF Grant: AI and Persuasion</h3>
+<p class="md:col-span-3 typography_body">Abstract: This project explores the impact of AI-generated content on public discourse and persuasion.</p>
+</div>
+<div class="border-t border-[var(--accent-color)]"></div>
+<div class="grid grid-cols-1 md:grid-cols-4 gap-4 items-start pt-6">
+<h3 class="md:col-span-1 text-base font-semibold text-[var(--text-primary)]">DARPA Grant: Truth in the Digital Age</h3>
+<p class="md:col-span-3 typography_body">Abstract: This project investigates the role of AI in shaping beliefs and the implications for truth and knowledge.</p>
+</div>
+<div class="border-t border-[var(--accent-color)]"></div>
+<div class="grid grid-cols-1 md:grid-cols-4 gap-4 items-start pt-6">
+<h3 class="md:col-span-1 text-base font-semibold text-[var(--text-primary)]">Carnegie Mellon Research Grant: Ethical AI</h3>
+<p class="md:col-span-3 typography_body">Abstract: This project examines the ethical considerations in the development and deployment of AI systems.</p>
+</div>
+</div>
+</section>
+<section id="projects">
+<h2 class="typography_h2 px-4 pb-4 pt-6">Projects</h2>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+<div class="card flex flex-col group">
+<div class="relative w-full aspect-video rounded-md overflow-hidden mb-4">
+<div class="absolute inset-0 bg-center bg-no-repeat bg-cover transition-transform duration-300 group-hover:scale-105" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuC8fi3zDV85BhB_3UjGZJ3xrQKhcUoiTSRfYFWtyNuW5FZrr3odJX7mCjafv8VwK6f6w1sdF47XVSyffOxPTwJSykZVRWmDs9zAJ0Qhm21vYfiWoOCDM4NxyOn5lKKIKwbwmx30A_pNhNnFm9aCBq3zKFHBMAYGNRVe6fTzl7SYkKH06tc2HlMGl28wesDh6BETHsTXsb5FKfZvS-hP7aMcbRFvVO3U-mfjsncnPwonq9Crc-d4bznjKBuNxStV8ZpedwPBpdHapVKz");'></div>
+</div>
+<h3 class="text-lg font-semibold text-[var(--text-primary)] mb-2">AI Persuasion &amp; Truth Lab</h3>
+<p class="typography_body flex-grow">Exploring the intersection of AI, persuasion, and truth.</p>
+</div>
+<div class="card flex flex-col group">
+<div class="relative w-full aspect-video rounded-md overflow-hidden mb-4">
+<div class="absolute inset-0 bg-center bg-no-repeat bg-cover transition-transform duration-300 group-hover:scale-105" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuB-9G0ecVdFZf6ZB8N23z66h33l8hoWZfkizZh_9_Sa35d6MUA8mWn8bxlNxotlpZElHm267JDrhwfIQDiMIsKfGTZSQTuA-gAVaamBZZR9PjxFMGwlGTcmIsxL6YJscoBMTWqK73p1dRsUIH1_AaIIUruxknul-It0H10VCX5ESG_X23LlldM9wAhG3vL_3lU-HvaTB0J5mMocMvddPRH-uCgshgYQ482Ex5rF4MVwWvLxyAecz5GvPgRhQNynoZUsa1VM9opV6gx1");'></div>
+</div>
+<h3 class="text-lg font-semibold text-[var(--text-primary)] mb-2">AI and Public Discourse</h3>
+<p class="typography_body flex-grow">Investigating the impact of AI on public discourse and communication.</p>
+</div>
+<div class="card flex flex-col group">
+<div class="relative w-full aspect-video rounded-md overflow-hidden mb-4">
+<div class="absolute inset-0 bg-center bg-no-repeat bg-cover transition-transform duration-300 group-hover:scale-105" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBHajwCXErtUKTaDQxKNurvsR7EX1kQwyg6G8B9THXSfuMOhRafy88YYUgDg3HEQFeuCYCRzHvCYSPq8kT_4L8DkmUpKJhPZGT4xkmc4L6jy0bBb1iphdX094rPFYii2HE4P98_GteKRZGbWtDun1YaxMJtILfKOQlEXhHqzpB3uNtnqHq5GA0lkeX1PX-xzNDkVAVlNsxaAcfNB5KplxIIhhtKC8pJt3ana3znxBIacgfXgo1IwgRR68cTndMXQ4Jvoq737erfFSp0");'></div>
+</div>
+<h3 class="text-lg font-semibold text-[var(--text-primary)] mb-2">Ethical AI Research</h3>
+<p class="typography_body flex-grow">Examining the ethical implications of AI technologies.</p>
+</div>
+</div>
+</section>
+</div>
+</main>
+</div>
+
+</body></html>
