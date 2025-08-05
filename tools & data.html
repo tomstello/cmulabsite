@@ -48,14 +48,14 @@
 <body class="font-newsreader bg-background-color text-text-primary">
 <div class="relative flex size-full min-h-screen flex-col overflow-x-hidden group/design-root">
 <div class="layout-container flex h-full grow flex-col">
-<header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-accent-color px-10 py-4">
+<header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-accent-color px-4 sm:px-10 py-4">
 <div class="flex items-center gap-3">
 <svg class="h-8 w-8 text-primary-color" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
 <path clip-rule="evenodd" d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM12 20C7.59 20 4 16.41 4 12C4 7.59 7.59 4 12 4C16.41 4 20 7.59 20 12C20 16.41 16.41 20 12 20ZM13 7H11V11H7V13H11V17H13V13H17V11H13V7Z" fill-rule="evenodd"></path>
 </svg>
 <h2 class="text-primary-color text-2xl font-bold tracking-tight">Costello Lab</h2>
 </div>
-<nav class="flex items-center gap-8 text-base font-medium text-text-secondary">
+<nav class="hidden md:flex items-center gap-8 text-base font-medium text-text-secondary">
 <a class="hover:text-primary-color transition-colors" href="index.html">Home</a>
 <a class="hover:text-primary-color transition-colors" href="research.html">Research</a>
 <a class="hover:text-primary-color transition-colors" href="lab.html">People</a>
@@ -69,7 +69,25 @@
 </svg>
 </button>
 </nav>
+<div class="md:hidden">
+<button id="mobile-menu-button" class="p-2 rounded-md">
+<svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+</svg>
+</button>
+</div>
 </header>
+<div id="mobile-menu" class="hidden md:hidden">
+<nav class="flex flex-col gap-4 p-4">
+<a class="hover:text-primary-color transition-colors" href="index.html">Home</a>
+<a class="hover:text-primary-color transition-colors" href="research.html">Research</a>
+<a class="hover:text-primary-color transition-colors" href="lab.html">People</a>
+<a class="hover:text-primary-color transition-colors" href="media & talks.html">Media & Talks</a>
+<a class="text-primary-color font-bold transition-colors" href="tools & data.html">Tools & Data</a>
+<a class="hover:text-primary-color transition-colors" href="about.html">About</a>
+<a class="hover:text-primary-color transition-colors" href="mailto:tcostello@cmu.edu">Contact</a>
+</nav>
+</div>
 <main class="container mx-auto px-4 py-12 md:px-6 lg:px-8">
 <div class="max-w-4xl mx-auto">
 <header class="mb-12">
@@ -151,5 +169,12 @@
 </main>
 </div>
 </div>
+<script>
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
 
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
 </body></html>
